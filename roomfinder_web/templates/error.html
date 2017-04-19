@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    ERROR when adding {{ email }} to the Cisco Spark room !<br><br>
+    You can contact <a href="mailto:cyrille.naert@dimensiondata.com">Cyrille NAERT</a> for support, if needed.
+
+      {% block footer %}
+    {{ super() }}
+  {% endblock %}
+{% endblock %}

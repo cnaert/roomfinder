@@ -5,4 +5,3 @@ BeautifulSoup
 requests-toolbelt
 pika
 uuid
-feedparser

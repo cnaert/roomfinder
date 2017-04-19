@@ -1,0 +1,74 @@
+{% from "macros.html" import nav_link with context %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block title %}
+      <title>{{ title }}</title>
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <script>
+      //Function To Display Popup
+      function div_show(id1,id2) {
+        document.getElementById(id1).style.display = "block";
+        document.getElementById(id2).style.display = "none";
+      }
+      function div_hide(id1,id2) {
+        document.getElementById(id1).style.display = "none";
+        document.getElementById(id2).style.display = "block";
+      }
+    </script>
+    <style type="text/css">
+      .container {
+/*
+        max-width: 500px;
+*/
+        padding-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Room Finder Web Server</a>
+          <a class="navbar-brand" href="https://web.ciscospark.com/#/rooms/b8c53f20-3d3e-11e6-86ba-2b096a6fbd90">Room Finder Cisco Spark room</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              {{ nav_link('form', 'Add yourself to Cisco Spark room') }}
+          </ul>
+          <ul class="nav navbar-nav">
+              {{ nav_link('about', 'About') }}
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    {% block heading %}
+      <h1>{{ title }}</h1>
+    {% endblock %}
+    <div class="container">
+    {% block content %}{% endblock %}
+    </div>
+
+    <!-- <div class="container"></div> -->
+    <div class="footer">
+      {% block footer %}
+      {% endblock %}
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

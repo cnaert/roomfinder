@@ -1,0 +1,38 @@
+["List of rooms status <br> for ILM building <br> from 2016-12-13T11:06:15 <br> to 2016-12-13T13:06:15:",[
+    ["Busy", "ILM-1-CEZANNE (12) Video (2-Screen)(Proxy-Approval required)", "CONF_5850@cisco.com"], 
+    ["Free", "ILM-1-CHAGALL (50) (Proxy-Approval required)", "CONF_5520@cisco.com"], 
+    ["Busy", "ILM-1-DALI (12) Video (1-Screen)(Proxy-Approval required)", "CONF_5518@cisco.com"], 
+    ["Busy", "ILM-1-DEGAS (14) Video (2-Screen)(Proxy-Approval required)", "CONF_5521@cisco.com"], 
+    ["Free", "ILM-1-GAUGUIN (49) Video (1-Screen)(Proxy-Approval required)", "CONF_5516@cisco.com"], 
+    ["Busy", "ILM-1-GOYA (20) Video (2-Screen)(Proxy-Approval required)", "CONF_5618@cisco.com"], 
+    ["Free", "ILM-1-MAGRITTE (6) Video (3-Screen)(Public)", "CONF_3725@cisco.com"], 
+    ["Busy", "ILM-1-REMBRANDT (8) Video (2-Screen)(Proxy-Approval required)", "CONF_3961@cisco.com"], 
+    ["Busy", "ILM-1-RENOIR (6) Video (3-Screen)(Public)", "CONF_5513@cisco.com"], 
+    ["Busy", "ILM-1-RUBENS (2) Video (1-Screen)(Public)", "CONF_32663@cisco.com"], 
+    ["Busy", "ILM-1-TURNER (4) Video (1-Screen)(Proxy-Approval required)", "CONF_5519@cisco.com"], 
+    ["Busy", "ILM-1-VELASQUEZ (10) Video (1-Screen)(Proxy-Approval required)", "CONF_75576@cisco.com"], 
+    ["Busy", "ILM-7-VERLAINE (8) Video (1-Screen)(Public)", "CONF_5504@cisco.com"]
+    ]]
+    
+[u'List of rooms status <br> in Dimension Data <br> from 2017-01-25T14:35:38 <br> to 2017-01-25T15:35:38', [
+    [u'Busy', u'Room@PAR.Bahamas', u'FR.Bahamas@dimensiondata.com', u'3', u'3.52', u'3', u'Meeting Visio'], 
+    [u'Busy', u'Room@PAR.Boabab', u'FR.Boabab@dimensiondata.com', u'4', u'4.26', u'4', u'Meeting Bubble'], 
+    [u'Busy', u'Room@PAR.Bordeaux', u'FR.Bordeaux@dimensiondata.com', u'0', u'0.21', u'6', u'Meeting'], 
+    [u'Busy', u'Room@PAR.Bourgogne', u'FR.Bourgogne@dimensiondata.com', u'0', u'0.22', u'6', u'Meeting Visio'], 
+    [u'Busy', u'Room@PAR.Canaries', u'FR.Canaries@dimensiondata.com', u'3', u'3.56', u'3', u'Meeting Bubble'], 
+    [u'Free', u'Room@PAR.Concorde', u'FR.Concorde@dimensiondata.com', u'4', u'4.15', u'14', u'Meeting Boardroom'], 
+    [u'Busy', u'Room@PAR.Cypres', u'FR.Cypres@dimensiondata.com', u'4', u'4.27', u'2', u'Meeting Bubble'], 
+    [u'Busy', u'Room@PAR.Erable', u'FR.Erable@dimensiondata.com', u'4', u'4.24', u'3', u'Meeting Bubble'], 
+    [u'Busy', u'Room@PAR.Fidji', u'FR.Fidji@dimensiondata.com', u'3', u'3.51', u'3', u'Meeting Visio priorit\xe9 HR'], 
+    [u'Busy', u'Room@PAR.Hawai', u'FR.Hawai@dimensiondata.com', u'3', u'3.62', u'8', u'Meeting Visio'], 
+    [u'Busy', u'Room@PAR.Java', u'FR.Java@dimensiondata.com', u'3', u'3.57', u'2', u'Meeting Bubble'], 
+    [u'Free', u'Room@PAR.Jersey', u'FR.Jersey@dimensiondata.com', u'3', u'3.30a', u'2', u'Meeting Bubble'], 
+    [u'Free', u'Room@PAR.Maldives', u'FR.Maldives@dimensiondata.com', u'3', u'3.51', u'3', u'Meeting Visio priorit\xe9 HR'], 
+    [u'Busy', u'Room@PAR.Peuplier', u'FR.Peuplier@dimensiondata.com', u'4', u'4.23', u'2', u'Meeting Bubble'], 
+    [u'Busy', u'Room@PAR.Philippines', u'FR.Philippines@dimensiondata.com', u'3', u'3.55', u'5', u'Meeting'], 
+    [u'Free', u'Room@PAR.Sapin', u'FR.Sapin@dimensiondata.com', u'4', u'4.16', u'5', u'Meeting War Room'], 
+    [u'Free', u'Room@PAR.Sequoia', u'FR.Sequoia@dimensiondata.com', u'4', u'4.04', u'5', u'Meeting Visio'], 
+    [u'Busy', u'Room@PAR.Seychelles', u'FR.Seychelles@dimensiondata.com', u'3', u'3.30b', u'2', u'Meeting Bubble'], 
+    [u'Busy', u'Room@PAR.Sumatra', u'FR.Sumatra@dimensiondata.com', u'3', u'3.54', u'6', u'Meeting Visio'], 
+    [u'Busy', u'Room@PAR.Tahiti', u'fr.tahiti@eu.didata.com', u'3', u'3.58', u'12', u'Meeting Visio VIP']
+    ]]

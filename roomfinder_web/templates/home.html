@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3 align="center"> 
+      {{ room_list[0].replace(' <br>', '') }} 
+  </h3>
+  <br>
+  <!-- <div class="panel panel-default"> -->
+    <table class="table table-bordered sortable">
+    <tr>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Status</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Room</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Email</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Floor</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Zone</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Seats</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Book</font>
+     </th>
+     <th bgcolor="#000">
+       <font color="#9d9d9d">Description</font>
+     </th>
+    </tr>
+    {% for r in room_list[1] %}
+      {% if r[0] == "Free" %}
+        <tr>
+        <!-- <tr> -->
+          <td bgcolor="#e7f7de" width="100">
+            <img src="static/img/available.png" height="32" width="32" hspace="2px" />{{ r[0] }}
+          </td>
+          <td bgcolor="#e7f7de">
+            {{ r[1] }}
+          </td>
+          <td bgcolor="#e7f7de">
+            <a href="sip:{{ r[2] }}">{{ r[2] }}</a>
+          </td>
+          <td bgcolor="#e7f7de">
+            {{ r[3] }}
+          </td>
+          <td bgcolor="#e7f7de">
+            {{ r[4] }}
+          </td>
+          <td bgcolor="#e7f7de">
+            {{ r[5] }}
+          </td>
+          <td bgcolor="#e7f7de">
+            <form action="{{ book_url }}" method="post">
+              <input type="hidden" name="room_name" value="{{ r[1] }}">
+              <input type="hidden" name="room_email" value="{{ r[2] }}">
+              <button id="book_button_{{ loop.index }}" type="button" onclick="div_show('get_email_form_{{ loop.index }}','book_button_{{ loop.index }}')">Book</button>
+              <div id="get_email_form_{{ loop.index }}" style="display:none;">              
+                Your email
+                <input type="text" name="user_email" >
+                <br>
+                <input type="submit" value="Book this room">
+                <button type="button" onclick="div_hide('get_email_form_{{ loop.index }}','book_button_{{ loop.index }}')">Cancel</button>
+              </div>
+            </form>
+          </td>
+          <td bgcolor="#e7f7de">
+            {{ r[6] }}
+          </td>
+        </tr>
+      {% else %}
+        <tr>
+        <!-- <tr> -->
+          <td bgcolor="#FF0000" width="100">
+            <img src="static/img/not_available.png" height="32" width="32" hspace="2px" />{{ r[0] }}
+          </td>
+          <td bgcolor="#FF0000">
+            {{ r[1] }}
+          </td>
+          <td bgcolor="#FF0000">
+            <a href="sip:{{ r[2] }}">{{ r[2] }}</a>
+          </td>
+          <td bgcolor="#FF0000">
+            Not available
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+    </table>
+  <!-- </div> -->
+  {% block footer %}
+    {{ super() }}
+  {% endblock %}
+{% endblock %}

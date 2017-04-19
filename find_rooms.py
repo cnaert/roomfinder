@@ -22,7 +22,7 @@ def findRooms(prefix):
 	header = "\"content-type: text/xml;charset=utf-8\""
 	#command = "curl --silent --header " + header +" --data '" + data + "' --ntlm "+"--negotiate "+ "-u "+ user+":"+password+" "+ url
 	command = "curl --silent --header " + header +" --data '" + data + "' --ntlm "+ "-u "+ user+":"+password+" "+ url
-	#print "command: "+str(command)
+	print "command: "+str(command)
 	response = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True).communicate()[0]
 	#print "response: "+str(response)
 	tree = ET.fromstring(response)
@@ -47,6 +47,7 @@ url = args.url
 user = args.user
 #password = getpass.getpass("Password:")
 password = args.password
+#password = "&&Dec2016"
 
 xml_template = open("resolvenames_template.xml", "r").read()
 xml = Template(xml_template)
